@@ -6,12 +6,6 @@
 
 /* header */
 header {
-  background: url(./images/Free_Sky_\(5596435888\).jpg);
-  background-size: cover;
-  background-position: center top;
-}
-
-header {
   display: block;
   unicode-bidi: isolate;
 }
@@ -106,7 +100,9 @@ Weather App
 }
 
 body {
-  background: #222;
+  background-image: url(./images/Free_Sky_\(5596435888\).jpg);
+  background-size: cover;
+  background-position: center top;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   margin: 20px auto;
@@ -214,8 +210,7 @@ body {
   height: 100%;
 }
 .contact {
-  background: #222;
-  color: white;
+  color: black;
   padding: 60px 20px;
   text-align: center;
 }
