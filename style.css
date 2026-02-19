@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  background: url(./images/Free_Sky_\(5596435888\).jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+header {
+  display: block;
+  unicode-bidi: isolate;
+}
+.header-logo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+  font-size: 40px;
+  text-align: center;
+  padding: 80px 25px;
+  margin: 0;
+}
+ 
+/* Navigation */
+
+.menu-bar {
+background: rgba(0, 0, 0, 0.6);
+text-align: center;
+position: sticky;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(139, 241, 207);
+
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+.menu-bar ul li a{
+
+    text-decoration: none;
+    color: #f1b6c0;
+}
+.active, .menu-bar ul li a:hover{
+    background-color: #42e5d2;
+    border-radius: 5%;
+    padding: 10px 15px;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+    margin-left: -10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li:hover{
+    color: #c79de3;
+
+}
+
+.nav-link:hover {
+  color: #00d4ff;
+}
+
+
+
+/* Navigation 
+
+nav {
+  position: sticky;
+  top: 0;
+  display: block;
+  unicode-bidi: isolate;
+}
+.main-nav {
+  background-color: #98f1da;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(67, 67, 126);
+}
+.main-nav-link {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 25px;
+  transition: all 0.5s;
+}
+@media (min-width: 900px) {
+  .main-nav-link {
+    font-size: 32px;
+  }
+}
+.main-nav-link:hover {
+  color: #00d4ff;
+}
+*/
+/* main*/
+
+// 
+
+Weather App
+{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 20px auto;
+  padding: 10px;
+  color: #333;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 20px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 30px;
+}
+
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  margin-top: 50px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.col img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 25px;
+  margin: -6px;
+}
+.weather {
+  display: none;
+}
+.error {
+  text-align: center;
+  display: none;
+  margin-top: 30px;
+}
+
+/* Contact Section */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.contact {
+  background: #222;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.contact-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #222;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  font-weight: 500;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+button:hover {
+  opacity: 70%;
+}
+button:active {
+  opacity: 90%;
+}
+
+/* Footer */
+.footercontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0, 20px;
+}
+
+footer {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
