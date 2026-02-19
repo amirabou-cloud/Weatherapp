@@ -80,7 +80,7 @@ Another difficulty was ensuring the background image or weather icons dynamicall
 
 ## 💡 Final Thoughts
 
-This project helped strengthen my understanding of JavaScript logic, API integration, and UI design. Although there were challenges — particularly around styling and dynamic data handling — overcoming them improved both my technical skills and problem-solving approach.
+This project helped strengthen my understanding of JavaScript logic, API integration, and UI design. Although there were challenges particularly around styling and dynamic data handling overcoming them improved both my technical skills and problem-solving approach.
 
 ---
 
@@ -89,7 +89,3 @@ This project helped strengthen my understanding of JavaScript logic, API integra
 ![My weather app](./images/weatherapp.jpg)
 
 ---
-
-## 📦 Installation
-
-1. Clone the repository:
