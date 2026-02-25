@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 600;
 }
 
 /* header */
@@ -90,8 +91,6 @@ margin: 0, auto, 0;
 
 /* main*/
 
-// 
-
 Weather App
 {
   margin: 0;
@@ -107,10 +106,15 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   margin: 20px auto;
-  padding: 10px;
+  padding: 0px;
   color: #333;
 }
+/* Utilities */
+.regular-txt{
+  font-weight: 400;
+}
 
+/* Section weather Input */
 .card {
   width: 90%;
   max-width: 470px;
@@ -155,6 +159,24 @@ body {
 .search button img {
   width: 30px;
 }
+
+/* Section weather Info*/
+.weather-info{
+  padding: 20px;
+}
+
+.location-date-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 
 .weather-icon {
   width: 170px;
@@ -201,6 +223,64 @@ body {
   text-align: center;
   display: none;
   margin-top: 30px;
+}
+
+.forecast-item-container{
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+  overflow: scroll;
+  padding-bottom: 12px;
+}
+
+.forecast-item-container::-webkit-scrollbar{
+  height: 8px;
+  border-radius: 99px;
+}
+
+.forecast-item-container::-webkit-scrollbar-track{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.forecast-item-container::-webkit-scrollbar-thumb{
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 99px;
+}
+
+.forecast-item{
+  min-width: 70px;
+  background: rgb(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 12px;
+  transition: 0.3s background;
+}
+
+.forecast-item:hover{
+  background: rgb (225, 225, 225, 0.15);
+}
+
+.forecast-item-img{
+  width: 35px;
+  height: 35px;
+}
+/* Section Message*/
+.section-message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-top: 25%;
+}
+
+.message-img{
+  height:180px;
+  width: fit-content;
+  background: none;
 }
 
 /* Contact Section */
